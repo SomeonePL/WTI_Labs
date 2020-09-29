@@ -1,0 +1,6 @@
+Laboratorium WTI, ćw. 3
+Synchroniczny interfejs Web API
+Andrzej Skrobak, 136310
+
+Zaletą wielowątkowego rozwiązania jest fakt tworzenia wątków dla użytkowników, przyśpiesza
+to proces dostępu do różnych zasobów.

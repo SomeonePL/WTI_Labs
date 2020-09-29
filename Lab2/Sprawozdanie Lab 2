@@ -1,0 +1,18 @@
+Laboratorium WTI ćw. 2
+Asynchroniczna komunikacja między mikrousługami z użyciem systemu kolejkowego
+Andrzej Skrobak, 136310
+
+1. Do wykonania tego punktu musiałem w przełącznikach aplikacji Docker zrezygnować
+z przełącznika `--network host` na rzecz przełącznika pozwalającego na mapowanie portu
+z sieci kontenerów na port hosta `-p 6381:6381`.
+
+2. Środowisko wirtualne pozwala na izolację importowanych bibliotek w określonych wersjach.
+
+6. Konsumer pobierając dane z pustej kolejki otrzymuje pusty obiekt.
+
+7.
+a. W tym przypadku konsument pobiera elementy z kolejki w kolejności w jakiej zostały przesłane
+przez producentów.
+
+8. W przypadku produkcji wolniejszej niż pobieranie elementów z kolejki dochodzi do sytuacji
+w której jeden z konsumentów pobiera wszystkie elementy kolejki, a drugi otrzymuje puste odpowiedzi.
